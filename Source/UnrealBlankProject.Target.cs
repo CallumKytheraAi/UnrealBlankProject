@@ -8,7 +8,11 @@ public class UnrealBlankProjectTarget : TargetRules
 	public UnrealBlankProjectTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
+		DefaultBuildSettings = BuildSettingsVersion.Latest;
 		ExtraModuleNames.AddRange( new string[] { "UnrealBlankProject" } );
+		bLegacyParentIncludePaths = false;
+        CppStandard = CppStandardVersion.Default;
+        WindowsPlatform.bStrictConformanceMode = true;
+        IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 	}
 }
