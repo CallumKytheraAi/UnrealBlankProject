@@ -8,8 +8,11 @@ public class UnrealBlankProjectEditorTarget : TargetRules
 	public UnrealBlankProjectEditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_1;
+		DefaultBuildSettings = BuildSettingsVersion.Latest;
 		ExtraModuleNames.Add("UnrealBlankProject");
+		bLegacyParentIncludePaths=false;
+		CppStandard = CppStandardVersion.Default;
+		WindowsPlatform.bStrictConformanceMode = true;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 	}
 }
