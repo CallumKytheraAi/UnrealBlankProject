@@ -11,5 +11,6 @@ public class UnrealBlankProjectEditorTarget : TargetRules
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_1;
 		ExtraModuleNames.Add("UnrealBlankProject");
+		CppStandard = CppStandardVersion.Default;
 	}
 }
