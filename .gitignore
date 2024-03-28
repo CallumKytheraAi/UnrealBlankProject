@@ -1,0 +1,10 @@
+UnrealBlankProject.sln
+.vsconfig
+
+# Ignore the plugin. This is the whole point of the blank project.
+Plugins/Kythera/*
+
+# Build artefacts
+Binaries/*
+Intermediate/*
+Saved/*
