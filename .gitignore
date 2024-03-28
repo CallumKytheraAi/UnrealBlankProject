@@ -6,5 +6,6 @@ Plugins/Kythera/*
 
 # Build artefacts
 Binaries/*
+DerivedDataCache/*
 Intermediate/*
 Saved/*
