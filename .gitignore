@@ -1,5 +1,6 @@
 UnrealBlankProject.sln
 .vsconfig
+.vs/*
 
 # Ignore the plugin. This is the whole point of the blank project.
 Plugins/Kythera/*
